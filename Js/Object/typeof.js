@@ -13,7 +13,3 @@ console.log(typeof x) // null
  * burda true donecek cunku undefined kendiside degersizdir == null .
  */
 if(x == undefined) console.log('tur')
-
-if(typeof(test) === 'undefined' || test != null) {
-	console.log('Test Degiskenini Kullanabiliriz...')
-}

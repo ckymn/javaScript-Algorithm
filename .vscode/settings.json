@@ -1,3 +1,6 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "terminal.integrated.commandsToSkipShell": [
+        "\"javascript.impicitProjectConfigure.checkJs\":true"
+    ]
 }
