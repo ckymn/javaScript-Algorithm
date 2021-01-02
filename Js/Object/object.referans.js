@@ -21,10 +21,10 @@ klon2 = Object.assign({}, kullanici1)
 console.log(klon2) //{ isim: 'İhsan' }
 console.log(klon === klon2) // false
 
-// Obje ve Obejct.assign 
-let person ={date: 1998}
-let klon3 = Object.assign({},person)
-console.log(person.date === klon3.data)
+// Obje ve Obejct.assign
+let person = { date: 1998 }
+let klon3 = Object.assign({}, person)
+console.log(person.date === klon3.data)// false
 
 // -Object.assign ile referans degeri degismeyecek obje ve  ekleme islemi yapilir
 let izin1 = { isim2: 'Muhammet' }
