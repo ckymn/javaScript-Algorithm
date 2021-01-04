@@ -96,3 +96,4 @@ let array = [1,2,3,4]
 founded = array.indexOf(4)
 console.log(founded) // 3
 
+console.log(data)
