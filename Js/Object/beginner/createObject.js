@@ -11,11 +11,12 @@ nesne.birseyYap()
 nesne['degisken'] = 1
 nesne.degiskne1 = 2
 nesne['Nemrudun Kizi'] = true
+console.log(nesne)
 
 // veri alma
-alert(nesne.adet)
+console.log(nesne.adet)
     //-> 2
-alert(nesne['Nemrudun Kizi'])
+console.log(nesne['Nemrudun Kizi'])
     //-> True
 
 // veri silmek
