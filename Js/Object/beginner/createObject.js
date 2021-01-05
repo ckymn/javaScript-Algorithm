@@ -1,7 +1,7 @@
 const nesne = {
   renk: 'kirmizi',
   adet: 2,
-  birseyYap: () => {
+  birseyYap: function(){
     console.log('olustu...')
   }
 }
