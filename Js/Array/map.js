@@ -115,6 +115,7 @@ const founded = data.map(item => {
   }
 })
 console.log(founded)
+//=========================================================================================
 
 // Array seklinde degilde duz string degeri geri dondericem
 // [
@@ -128,3 +129,26 @@ const founded1 = data.map(item => {
 })
 
 console.log(founded1)
+//=========================================================================================
+
+//bu map() icerisinde array bir degerde tekrardan map() kullanilabilir
+let willSaveData = data.map(newData =>{
+  return {
+    name: newData.name,
+    age: newData.age,
+    email: newData.email,
+    friends: newData.friends.map(f => f.name)
+  }
+})
+
+//=========================================================================================
+
+// map ve filter degerlerini beraber kullanabiliyoruz buda map()'in getirdigi guzel kullanim
+let willSaveData = data.filter(item => item.age <= 20).map(newData =>{
+  return {
+    name: newData.name,
+    age: newData.age,
+    email: newData.email,
+    friends: newData.friends.map(f => f.name)
+  }
+})
