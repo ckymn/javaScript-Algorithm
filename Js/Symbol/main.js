@@ -1,4 +1,5 @@
 /**
+ * NEW PRIMITIVE TYPE
  * {symbol}: Objelerin nitelikleri icin kullanilan teil(unique) ve degismez(immutuable) verit tipidir
  *          *tekil(unique): Symbol() === Symbol() // false
  *                  ?Array() === Array() //false
@@ -81,3 +82,19 @@ let clone5 = Object.assign({}, obj5) //bunun ile erisilir
 console.log(Reflect.ownKeys(obj5)) // bunun ile erisilir
 console.log(Object.getOwnPropertySymbols(obj5))//bunun ile erisilir
 console.log(clone5[myPrimitvieFunction])
+
+//==================================================
+// degeri ile cagirma
+let global_sym = Symbol.for('civan')
+let obj6 = {
+    [global_sym]: 'Civan Cokyaman'
+}
+let global_sym = null
+obj6[global_sym]// undefined
+console.log(Symbol.for('civan'))// Civan Cokyaman
+
+//=================================================
+// value ile cagirma
+let sym6 = Symbol.for('civan')
+Symbol.keyFor(sym6)//civan
+
