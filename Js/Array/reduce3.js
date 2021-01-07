@@ -30,4 +30,3 @@ const result = array.reduce((total, item) => {
   return total
 }, [])
 console.log(result)
-

@@ -8,10 +8,10 @@ const object = {
         return hint === 'number' ? 42 : null
     }
 } 
-console.log(object)// hint:string
+console.log(object)// hint:default {[Symbol(Symbol.toPrimitive)]: [function]}
 console.log(+object)// hint:number 
 console.log(object+3)// hint:default
-console.log(object+'ahmet')// hint:default
+console.log(object+' ahmet')// hint:string >>> null ahmet
 
 //=================================================
 let user ={
