@@ -1,7 +1,8 @@
 /**
  * NEW PRIMITIVE TYPE
  * {symbol}: Objelerin nitelikleri icin kullanilan teil(unique) ve degismez(immutuable) verit tipidir
- *          *tekil(unique): Symbol() === Symbol() // false
+ *          *tekil(unique): 
+                    Symbol() === Symbol() // false
  *                  ?Array() === Array() //false
  *                  ?Object() === Object() //false
  *                  ?[] === [] //false

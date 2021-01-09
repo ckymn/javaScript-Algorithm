@@ -13,3 +13,12 @@ const sum = euros.reduce((total, amount, index, array) => {
   total + amount
 }, 0) // burda istersek baslangic degeri'de atayabiliyoruz
 console.log(sum) //118.11
+
+
+//---------------------------------------------------------------------------------------
+
+console.log(typeof {});//object
+console.log(typeof []);//object woops not Array ?
+
+console.log(Array.isArray({})); // false
+console.log(Array.isArray([])); // true
