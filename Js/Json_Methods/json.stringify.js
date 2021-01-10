@@ -93,6 +93,7 @@ console.log(room);
 			//     place: [Circular *1]
 			//   }
 			// }
+console.log("DeepEqual" +deepEqual(room,meetup));
 // burda Converting circular structure to JSON hatasi cikmamasi icin Haric Tutma islemi yapicaz!!!
 console.log(JSON.stringify(meetup,['title', 'participants', 'place', 'name', 'number']));
 //-->{"title":"Conference","participants":[{"name":"Muhammet"},{"name":"Ahmet"}],"place":{"number":23}}
