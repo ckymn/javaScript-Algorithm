@@ -4,3 +4,11 @@
 		kendisi silinmedikce carbage collector calismaz !!!
 */
 
+// Object , Function , NaN gibi verileri kabul ederler.
+
+let map = new WeakMap();
+const object =[];
+map.set(object,"object");
+
+console.log(map.get(object));//object
+console.log(map.value())

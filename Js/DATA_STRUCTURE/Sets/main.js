@@ -78,11 +78,11 @@ console.log('================================')
 //Set()
 
 function unique (arr) {
-  return Array.from(new Set(arr))
+  return Array.from(new Set(arr));
 }
-console.log(unique(values))
+console.log(unique(values));
 
-
+console.log("_________________________________")
 //==========================================================================
 // ANAGRAM DUZENLEME ISLEMLERI 
 let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];

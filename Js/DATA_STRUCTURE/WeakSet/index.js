@@ -8,3 +8,5 @@ console.log(...set2);// 1 2 3
 
 const set3 = Array.from(new Set(arr));
 console.log(set3);// [1,2,3]
+
+
