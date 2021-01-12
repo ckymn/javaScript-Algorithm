@@ -1,13 +1,13 @@
-class Node {
+//veriler ve baglanti node'lari bululunur.
+class ListNode {
 	constructor(data,next){
 		this.data = data;
 		this.next = next;
 	}
 }
-
+// baslama noktasi
 class LinkedList{
 	constructor(){
-		//baslangic girisi
 		this.head = null;
 	}
 }
@@ -23,6 +23,7 @@ LinkedList.prototype.getAt = function(index){
 	while(node){
 		if(index === counter){
 			return node;
+			Math.
 		}
 		counter++;
 		node = node.nex;// bir sonraki yapiya baglaniyoruz.
