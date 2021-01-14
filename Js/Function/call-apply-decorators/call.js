@@ -1,26 +1,19 @@
-let worker = {
-  someMethod() {
-    return 1;
-  },
-
-  slow(x) {
-    console.log("Called with " + x);
-    return x * this.someMethod();
+let who = {
+  name: "Muhammet",
+  surname: "cokyaman",
+  printFullName: function () {
+    console.log(`${this.name} and ${this.surname}`);
   },
 };
 
-function cachingDecorator(func) {
-  let cache = new Map();
-  return function (x) {
-    if (cache.has(x)) {
-      return cache.get(x);
-    }
-    let result = func(x);
-    cache.set(x, result);
-    return result;
-  };
-}
+who.printFullName(); // Muhammet and cokyaman
 
-let func = worker.slow;
+let who2 = {
+  name: "Ahmet",
+  surname: "Cokyaman",
+};
 
-func.call(2, 3, 4);
+who.printFullName.call(who2); // Ahmet and Cokyaman
+
+let newWho = who.printFullName.bind(who2);
+console.log(newWho);

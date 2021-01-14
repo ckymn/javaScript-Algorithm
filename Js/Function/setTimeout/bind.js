@@ -24,6 +24,10 @@ dog.talk(); //whoof
 let talkdog = dog.talk;
 talkdog(); //undefined
 
-let talkdogbind = dog.talk.bind(dog);
-talkdogbind(); //woof
+let talkdogBind = dog.talk.bind(dog);
+talkdogBind(); //woof
 
+let talkdogArrow = () => {
+  dog.talk();
+};
+talkdogArrow(); //whoof
