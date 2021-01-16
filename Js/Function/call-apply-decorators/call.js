@@ -17,3 +17,7 @@ who.printFullName.call(who2); // Ahmet and Cokyaman
 
 let newWho = who.printFullName.bind(who2);
 console.log(newWho);
+
+//=============================================
+
+//amac bir objedeki fonksiyonu farkli objelerde kullanmamizi saglar!!!
