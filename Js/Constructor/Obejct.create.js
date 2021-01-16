@@ -59,6 +59,34 @@ function Employee(name, age) {
 Employee.prototype = Object.create(Person.prototype);
 
 const emp = new Employee("m", 12345);
-emp.test1();// Test One
-emp.test2();// Test Two
+emp.test1(); // Test One
+emp.test2(); // Test Two
 
+//==================================================
+
+//Burda Atandiktan sonra property islemini hallettik ama ( constructor) degeri bozuldu
+// Buna ise kendi degerini tekrardan atamak zorunda kalicaz
+function Obje1(number1, number2) {
+  this.number1 = number1;
+  this.number2 = number2;
+}
+Obje1.prototype.myConstructor = function () {
+  console.log(`${this.constructor.name}`);
+};
+
+function Obje2(number1, number2) {
+  this.number1 = number1;
+  this.number2 = number2;
+}
+Obje2.prototype.myConstructor = function () {
+  console.log(`${this.constructor.name}`);
+};
+
+Obje2.prototype = Object.create(Obje1.prototype);
+Obje2.prototype.constructor = Obje2; //cunku kendi constrructor degeri  bozuluyor
+
+const o1 = new Obje1();
+o1.myConstructor(); // Obje1
+
+const o2 = new Obje2();
+o2.myConstructor(); // Obje2
