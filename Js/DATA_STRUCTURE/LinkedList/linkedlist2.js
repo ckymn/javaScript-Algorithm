@@ -1,4 +1,4 @@
-/*
+r/*
 	Daha önce belirtildiği gibi, bir liste düğümü iki öğe içerir
 	: veriler (data)
 	: sonraki düğüme işaretçi(next). 
