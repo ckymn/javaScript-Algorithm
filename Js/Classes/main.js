@@ -1,29 +1,51 @@
-class Person{
-	constructor(name,surname){
-		this.name = name;
-		this.surname = surname;
-	}
+// Class'lar bize prototype iceresindeki referans sorunu'nu ortadan kaldiriyor.
 
-	// property
-	fullName(){
-		return `name: ${this.name} surname: ${this.surname}`;
-	}
+// CLASS DECLERATION
+class Person {
+  constructor(name, surname, age) {
+    this.name = name;
+    this.surname = surname;
+    this.age = age;
+    this.friends = ["haci", "sinan"];
+  }
 
-	// static: sinif ornegi almadan kullanabiliyoruz
-	static test(){
-		return "Static test metodu....";
-	}
+  fullName() {
+    console.log(`${this.name} - ${this.surname}`);
+  }
 }
 
-class Staff extends Person{
-	constructo(name,surname,salary){
-		this.salary = salary;
-		super(name,surname);
-	}
-}
+const name1 = new Person("ahmet", "cokyaman", 13);
+const name2 = new Person("aren", "cokyaman", 4);
 
+console.log(name1);
+console.log(name2);
+name1.fullName();
 
-const person = new Person("Muhammet","Cokyaman",);
+// burda referans hatasini kaldirmis olduk !!
+name1.friends.push("Cinar");
+console.log(name1.friends);
+console.log(name2.friends);
 
-person.fullName();
-Person.test();
+//Class'lar ozel bir fonksiyon'dur
+console.log(typeof Person);
+
+//===========================================
+
+//CLASS EXPRESSION
+const Foods = class {
+  constructor(name, color, salary) {
+    this.name = name;
+    this.color = color;
+    this.salary = salary;
+  }
+  delicious() {
+    return `${this.name} - ${this.color}`);
+  }
+};
+
+const kivi = new Foods("kivi", "greeen", 100);
+const apple = new Foods("apple", "yellow", 20);
+
+console.log(kivi);
+console.log(apple);
+console.log(kivi.delicious());
