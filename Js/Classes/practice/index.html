@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title">Class: HTML List Binding</h1>
+    <hr>
+    <ul id="mylist">
+        <!-- To be filled by javascript -->
+        <li>Muhammet</li>
+        <li>Ahmet</li>
+        <li>Seher</li>
+        <li>Gulistan</li>
+    </ul>
+
+    <script src="./index.js"></script>
+    <script type="text/javascript">
+        const myList = document.getElementById("myList");
+        const listBinding = new ListBinding(myList);
+    </script>
+
+
+</body>
+
+</html>

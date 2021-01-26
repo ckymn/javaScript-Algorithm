@@ -27,4 +27,3 @@ console.log(elis.f1()); //ture
 
 const f2 = elis.f1; //suan global'e ait
 console.log(f2()); // false
-
