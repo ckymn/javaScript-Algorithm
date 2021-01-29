@@ -1,5 +1,6 @@
 //FIRST CLASS FUNCTION KURALLARI
 
+// function > function expression
 const myFunc = function (num) {
   return {
     toDouble: function () {
@@ -11,7 +12,7 @@ const myFunc = function (num) {
 myFunc(8).toDouble();
 
 //---------------------------
-
+// funciton > function decleration
 const youFunc = function (num) {
   return function toDouble() {
     console.log(num * 2);

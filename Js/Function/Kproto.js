@@ -21,7 +21,7 @@ console.log(person1.__proto__.__proto__); //toString(),hasOwnPrototype()
 //====================================================================
 
 //OBJECT CREATE
-// function Gender(name, surname, age) {
+// `function Gender(name, surname, age) {
 //   this.name = name;
 //   this.surname = surname;
 //   this.age = age;
@@ -30,8 +30,8 @@ console.log(person1.__proto__.__proto__); //toString(),hasOwnPrototype()
 //   return this.name + "-" + this.surname;
 // };
 
-// const Kender = Object.create(Gender); // prototype icerisinde saklidir.
-// console.log(Kender);
+// const Kender = `Object.create(Gender); // prototype icerisinde saklidir.
+// `console.log(Kender`);
 
 const person = {
   name: "John",
