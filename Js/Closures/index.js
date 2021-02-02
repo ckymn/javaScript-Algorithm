@@ -85,10 +85,27 @@ console.log(add1); //calisir
 var counter = function () {
   var value = 0;
   return function (val) {
-    
     return (value += val);
   };
 };
 
 const add2 = counter();
 console.log(add2(2)); //calisi
+
+//====================================
+// closure inside for-loop
+function wrapElements(a) {
+  let result = [];
+
+  for (let i = 0; i < a.length; i++) {
+    function display() {
+      return a[i];
+    }
+    result[i] = display();
+  }
+  return result;
+}
+
+const sonuc = wrapElements([1, 2, 3, 4, 5, 6]);
+
+console.log(sonuc[0]);//1

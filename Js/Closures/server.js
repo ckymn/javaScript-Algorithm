@@ -32,3 +32,20 @@ function klvvyePress() {
 const klavye = klvvyePress();
 console.log(klavye());//1
 console.log(klavye());//1
+
+//=====================================
+
+//loops - closures -- IIFE
+function wrapElements(a) {
+  let result = [],i
+    
+    for (i = 0; i < a.length; i++) {
+     (result[i] = function() {return a[i]})()
+    }
+     return result;
+   }
+  
+  const sonuc = wrapElements([1, 2, 3, 4, 5, 6]);
+  
+  console.log(sonuc);
+  
