@@ -47,6 +47,7 @@ const init4 = function () {
   }
   return display();
 };
+
 init4(); // calisir ==> Mami
 
 //==========================
@@ -84,9 +85,10 @@ console.log(add1); //calisir
 var counter = function () {
   var value = 0;
   return function (val) {
+    
     return (value += val);
   };
 };
 
 const add2 = counter();
-console.log(add2(2)); //calisir
+console.log(add2(2)); //calisi

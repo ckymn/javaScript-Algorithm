@@ -11,19 +11,17 @@ const person = {
 // * 1. Klonlama Islemi
 
 const ali = Object.create(person);
-console.log(ali.name);// Jhon
+console.log(ali.name); // Jhon
 ali.name = "ali";
-console.log(ali.name);// ali
-console.log(person.name);// Jhon !!BURDA KLONLAMA ISLEMI OLUNCA BASKA DEGERLERE ETKI EDILMEZ
+console.log(ali.name); // ali
+console.log(person.name); // Jhon !!BURDA KLONLAMA ISLEMI OLUNCA BASKA DEGERLERE ETKI EDILMEZ
 
 // *2. Klonlama islemi -datastructor
 
-const ahmet = {...person};
-console.log(ahmet.name);//Jhon
+const ahmet = { ...person };
+console.log(ahmet.name); //Jhon
 ahmet.name = "Ahmet";
-console.log(ahmet.name);//Ahmet
-console.log(person.name);//Jhon !! BURDA KLONLAMA ISLEMI OLUNCA BASKA DEGERLER ETKILERNMEZ
+console.log(ahmet.name); //Ahmet
+console.log(person.name); //Jhon !! BURDA KLONLAMA ISLEMI OLUNCA BASKA DEGERLER ETKILERNMEZ
 
 //  ? AYNI SEKILDE DATASTRUCTOR'LARI kullanarak Array'tarafinda da yapabiliriiz islemlerimizi
-
-

@@ -69,16 +69,16 @@
 
 // //---REST----
 
-// let arr = {
-// 	name:"civan",
-// 	age: 21,
-// 	surname:"cokyaman"
-// };
+let arr = {
+	name:"civan",
+	age: 21,
+	surname:"cokyaman"
+};
 
-// let {name, ...other} = arr;
-// console.log(title);
-// console.log(other.age);
-// console.log(other.surname);
+let {name, ...other} = arr;
+console.log(title);
+console.log(other.age);
+console.log(other.surname);
 
 
 ////////////////////////////////////////////////////////
